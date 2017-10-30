@@ -10,7 +10,10 @@ pipeline{
 					}
 					post
 					{
-						archiveArtifacts :'**/*.war'
+						success
+						{
+							archiveArtifacts :'**/*.war'
+						}
 
 					}
 				}

@@ -12,7 +12,7 @@ pipeline{
 					{
 						success
 						{
-							archiveArtifacts :'**/*.war'
+							archiveArtifacts :'**/target/*.war'
 						}
 
 					}

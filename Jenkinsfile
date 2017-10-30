@@ -7,7 +7,12 @@ pipeline{
 				{
 				    steps{
 					sh 'mvn clean package'
-				}
+					}
+					post
+					{
+						archiveArtifacts :'**/*.war'
+
+					}
 				}
 				
 			}

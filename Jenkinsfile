@@ -6,7 +6,7 @@ pipeline{
 				stage('bulit')
 				{
 				    steps{
-					sh 'ls -la'
+					sh 'mvn clean package'
 					}
 					
 				}

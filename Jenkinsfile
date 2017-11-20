@@ -18,7 +18,7 @@ pipeline{
 					    {
 						    success
 						    {
-						    echo 'post'
+						    echo 'post 123'
 					            archiveArtifacts '**/target/*.war'
 						    }
 					    }	

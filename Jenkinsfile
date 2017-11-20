@@ -7,6 +7,10 @@ pipeline{
 				{
 				    steps{
 					    sh 'mvn package'
+					    post
+					    {
+						    echo 'post'
+					    }
 					    echo 'step 2'
 					    echo 'step3'
 					    

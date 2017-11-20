@@ -11,8 +11,7 @@ pipeline{
 					    {
 						    echo 'post'
 					    }
-					    echo 'step 2'
-					    echo 'step3'
+					  
 					    
 					}
 				 	

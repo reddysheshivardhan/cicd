@@ -9,7 +9,10 @@ pipeline{
 					    sh 'mvn package'
 					    post
 					    {
+						    success
+						    {
 						    echo 'post'
+						    }
 					    }
 					  
 					    

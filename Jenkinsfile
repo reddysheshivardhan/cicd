@@ -7,16 +7,15 @@ pipeline{
 				{
 				    steps{
 					    sh 'mvn package'
-					    post
+					      				    
+					}
+				    post
 					    {
 						    success
 						    {
 						    echo 'post'
 						    }
-					    }
-					  
-					    
-					}
+					    }	
 				 	
 				}
 				stage('arch')

@@ -14,7 +14,7 @@ pipeline{
 						    success
 						    {
 						    echo 'post'
-					            archiveArtifacts '**/target123/*.war'
+					            archiveArtifacts '**/target/*.war'
 						    }
 					    }	
 				 	

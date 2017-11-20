@@ -14,19 +14,12 @@ pipeline{
 						    success
 						    {
 						    echo 'post'
+					            archiveArtifacts '**/target/*.war'
 						    }
 					    }	
 				 	
 				}
-				stage('arch')
-				{
-					steps
-					{
-					echo 'archive'
-						archiveArtifacts '**/target/*.war'
-					
-					}
-				}
+				
 			
 				
 			}

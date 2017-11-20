@@ -23,8 +23,7 @@ pipeline{
 				{
 					steps{
 				  timeout(time: 5, unit: 'HOURS') {
-					    // some block
-					  echo 'Time out'
+					  input message: 'Waiting for approval'
 				}	
 				}
 				}

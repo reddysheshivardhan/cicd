@@ -6,14 +6,12 @@ pipeline{
 				stage('bulit')
 				{
 				    steps{
-					sh 'mvn clean package'
+					    sh 'mvn package'
+					    echo 'step 2'
+					    echo 'step3'
 					    
 					}
-				   steps
-					{
-						echo 'step2 bulit'
-					}
-					
+				 	
 				}
 				stage('arch')
 				{

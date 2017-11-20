@@ -12,7 +12,11 @@ pipeline{
 				}
 				stage('arch')
 				{
+					steps
+					{
 					echo 'archive'
+					
+					}
 				}
 			
 				

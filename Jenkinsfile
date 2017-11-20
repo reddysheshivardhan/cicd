@@ -27,6 +27,18 @@ pipeline{
 
 				}	
 				}
+					post
+					{
+						success
+						{
+							build 'testjob'
+
+						}
+						failure
+						{
+							echo 'failed'
+						}
+					}
 				}
 				
 			

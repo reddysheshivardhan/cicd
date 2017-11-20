@@ -7,9 +7,10 @@ pipeline{
 		
 			stages
 			{
-				agent any
+				
 				stage('bulit')
 				{
+					agent any
 				    steps{
 					    sh 'mvn package'
 					      				    

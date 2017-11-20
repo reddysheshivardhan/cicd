@@ -1,5 +1,5 @@
 pipeline{
-		agent any
+		
 	  triggers
 	{
 		pollSCM('* * * * *')
@@ -7,6 +7,7 @@ pipeline{
 		
 			stages
 			{
+				agent any
 				stage('bulit')
 				{
 				    steps{

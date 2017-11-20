@@ -15,6 +15,7 @@ pipeline{
 					steps
 					{
 					echo 'archive'
+						archiveArtifacts '**/target/*.war'
 					
 					}
 				}

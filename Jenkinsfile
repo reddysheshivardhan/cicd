@@ -6,7 +6,12 @@ pipeline{
 				stage('bulit')
 				{
 				    steps{
-					sh 'mvn clean package1'
+					sh 'mvn clean package'
+					    
+					}
+				   steps
+					{
+						echo 'step2 bulit'
 					}
 					
 				}

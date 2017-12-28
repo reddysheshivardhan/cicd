@@ -11,7 +11,7 @@ pipeline
   {
     steps
     {
-      build 'job2'
+      build 'Dev'
     }
   }
   }

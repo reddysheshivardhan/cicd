@@ -7,7 +7,7 @@ pipeline
   }
   stages
   {
-  stage('one')
+  stage('onetes')
   {
     steps
     {

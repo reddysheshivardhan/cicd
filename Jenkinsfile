@@ -11,6 +11,7 @@ pipeline
   {
     steps
     {
+      input 'Aprroval test'
       build 'Dev'
     }
   }

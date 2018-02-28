@@ -1,6 +1,13 @@
 pipeline
 {
   agent any
+  triggers
+  {
+     pollSCM('* * * * *')
+	 
+  }
+  
+  
   stages
   {
 	stage('SCM')
@@ -21,11 +28,11 @@ pipeline
 	{
 		steps
 		{
-		sh 'scp  **/target/*.war ubuntu@172.31.16.128:/var/lib/tomcat7/webapps'
+		sh 'scp  **/targets/*.war ubuntu@172.31.16.128:/var/lib/tomcat7/webapps
 		}
 	 post
 	  {
-	     success
+	     sucess
 		 {
 		 mail bcc: '', body: 'kjdsh khgs', cc: '', from: '', replyTo: '', subject: 'Succesful Deployment', to: 'sheshivardhan@yahoo.com'
 

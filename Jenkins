@@ -28,7 +28,7 @@ pipeline
 	{
 		steps
 		{
-		sh 'scp  **/targets/*.war ubuntu@172.31.16.128:/var/lib/tomcat7/webapps
+		sh 'scp  **/targets/*.war ubuntu@172.31.16.128:/var/lib/tomcat7/webapps'
 		}
 	 post
 	  {

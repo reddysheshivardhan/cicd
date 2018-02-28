@@ -28,6 +28,8 @@ pipeline
 	{
 		steps
 		{
+		  input 'Approval is required'
+
 		sh 'scp  **/targets/*.war ubuntu@172.31.16.128:/var/lib/tomcat7/webapps'
 		}
 	 post

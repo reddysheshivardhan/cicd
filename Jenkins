@@ -1,0 +1,37 @@
+pipeline
+{
+  agent any
+  stages
+  {
+	stage('SCM')
+	{
+		steps
+		{
+		   git 'https://github.com/reddysheshivardhan/cicd.git'
+		}
+	}
+	stage('Bulit')
+	{
+		steps
+		{
+		 sh 'mvn package'
+		}
+	}
+	stage('deploy')
+	{
+		steps
+		{
+		sh 'scp  **/target/*.war ubuntu@172.31.16.128:/var/lib/tomcat7/webapps'
+		}
+	 post
+	  {
+	     success
+		 {
+		 mail bcc: '', body: 'kjdsh khgs', cc: '', from: '', replyTo: '', subject: 'Succesful Deployment', to: 'sheshivardhan@yahoo.com'
+
+		 }
+	  }
+	  
+	}
+  }
+}

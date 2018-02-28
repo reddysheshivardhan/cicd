@@ -32,7 +32,7 @@ pipeline
 		}
 	 post
 	  {
-	     sucess
+	     success
 		 {
 		 mail bcc: '', body: 'kjdsh khgs', cc: '', from: '', replyTo: '', subject: 'Succesful Deployment', to: 'sheshivardhan@yahoo.com'
 
